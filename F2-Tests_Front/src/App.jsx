@@ -1,30 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useCallback } from 'react';
+import PlanningList from './Planning.jsx';
 
-export default function PlanningList({ loadSessions }) {
-  const [group, setGroup] = useState('all');
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(false);
+const sessions = [
+  { id: 's01', group: 'A', title: 'React composants' },
+  { id: 's02', group: 'B', title: 'React événements' },
+  { id: 's03', group: 'Promotion', title: 'Données et SQL' },
+];
 
-  useEffect(() => {
-    setLoading(true);
-    loadSessions({ group }).then(result => {
-    setItems(result);
-    setLoading(false);
-    });
-    }, [group, loadSessions]);
+export default function App() {
+  const loadSessions = useCallback(async ({ group }) => (
+    group === 'all'
+      ? sessions
+      : sessions.filter(session => session.group === group || session.group === 'Promotion')
+  ), []);
 
-  return (
-    <section>
-    <h1>Planning</h1>
-    <select aria-label="Groupe" value={group}
-    onChange={e => setGroup(e.target.value)}>
-    <option value="all">Tous</option>
-    <option value="A">Groupe A</option>
-    <option value="B">Groupe B</option>
-    <option value="Promotion">Promotion</option>
-    </select>
-    {loading ? <p role="status">Chargement...</p>
-    : <ul>{items.map(s => <li key={s.id}>{s.title}</li>)}</ul>}
-    </section>
-  );
+  return <PlanningList loadSessions={loadSessions} />;
 }
