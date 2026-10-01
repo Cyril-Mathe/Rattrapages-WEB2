@@ -24,6 +24,7 @@ npm install
 ```powershell
 npm run dev
 npm test
+npm run test:before
 npm run test:watch
 npm run build
 npm run lint
@@ -36,6 +37,7 @@ npm run lint
 - `F2-Tests_Front/src/Planning_Initial.jsx` : version initiale fournie dans le sujet.
 - `F2-Tests_Front/src/Planning.jsx` : version corrigée avec erreur, retry et protection contre les réponses obsolètes.
 - `F2-Tests_Front/src/Planning.test.jsx` : tests React Testing Library et Vitest.
+- `F2-Tests_Front/src/PlanningInitial.red.test.jsx` : tests volontairement rouges de la version initiale, exécutés séparément.
 - `F2-Tests_Front/src/setupTests.js` : configuration des matchers accessibles.
 - `F2-Tests_Front/src/App.jsx` : mini-interface exécutable dans le navigateur.
 
@@ -59,3 +61,5 @@ Les traces demandées pour F2 sont disponibles dans le dossier [preuves](preuves
 
 - [Avant correction](preuves/avant-correction.md) : deux défauts réels et leurs tests rouges.
 - [Après correction](preuves/apres-correction.md) : les six tests passés avec succès.
+
+La commande `npm run test:before` exécute volontairement les deux tests rouges de la version initiale. Elle ne fait pas partie de `npm test`, afin que la suite corrigée reste verte.

@@ -8,8 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "test": "vitest run src/Planning.test.jsx",
+    "test:before": "vitest run src/PlanningInitial.red.test.jsx",
+    "test:watch": "vitest src/Planning.test.jsx"
   },
   "dependencies": {
     "react": "^19.2.8",

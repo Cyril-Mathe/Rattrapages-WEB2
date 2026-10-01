@@ -4,6 +4,22 @@
 
 `F2-Tests_Front/src/Planning_Initial.jsx`
 
+Commande reproductible depuis `F2-Tests_Front` :
+
+```powershell
+npm run test:before
+```
+
+Le fichier exécuté est `src/PlanningInitial.red.test.jsx`. Il contient volontairement deux attentes que la version initiale ne respecte pas.
+
+La commande produit bien deux tests rouges :
+
+```text
+Test Files  1 failed (1)
+Tests       2 failed | 0 passed (2)
+Errors      1 error
+```
+
 ## Défaut 1 : erreur réseau non gérée
 
 Entrée : `loadSessions` rejette sa promesse.
