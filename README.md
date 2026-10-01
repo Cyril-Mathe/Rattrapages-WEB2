@@ -52,3 +52,10 @@ npm run lint
 | Clavier | Focus puis touches clavier | Filtre utilisable et focus conservé | Accessibilité du contrôle |
 
 Pour les justifications techniques et les usages de l'IA, consulter [JUSTIFICATIONS.md](JUSTIFICATIONS.md) et [SOURCES_IA.md](SOURCES_IA.md).
+
+### Preuves avant / après
+
+Les traces demandées pour F2 sont disponibles dans le dossier [preuves](preuves/README.md) :
+
+- [Avant correction](preuves/avant-correction.md) : deux défauts réels et leurs tests rouges.
+- [Après correction](preuves/apres-correction.md) : les six tests passés avec succès.
