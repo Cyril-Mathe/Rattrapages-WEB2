@@ -60,3 +60,5 @@ Les traces demandées pour F2 sont disponibles dans le dossier [preuves](preuves
 - [Après correction](preuves/apres-correction.md) : les six tests passés avec succès.
 
 La commande `npm run test:before` exécute volontairement les deux tests rouges de la version initiale. Elle ne fait pas partie de `npm test`, afin que la suite corrigée reste verte.
+
+## Lien du dépôt GitHub : [https://github.com/Cyril-Mathe/Rattrapages-WEB2](https://github.com/Cyril-Mathe/Rattrapages-WEB2)

@@ -84,3 +84,5 @@ restent utilisables à 360 px.
 
 - [JUSTIFICATIONS.md](JUSTIFICATIONS.md) : choix techniques, interface et limites ;
 - [SOURCES_IA.md](SOURCES_IA.md) : usages de l'IA pendant la réalisation.
+
+## Lien du dépôt GitHub : [https://github.com/Cyril-Mathe/Rattrapages-WEB2](https://github.com/Cyril-Mathe/Rattrapages-WEB2)
