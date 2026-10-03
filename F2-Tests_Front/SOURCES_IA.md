@@ -8,6 +8,6 @@ L'IA a été utilisée comme aide au développement pour :
 - corriger les erreurs révélées par l'exécution de `npm test` ;
 - rédiger la documentation.
 
-Les fichiers concernés sont principalement `F2-Tests_Front/src/Planning.jsx`, `F2-Tests_Front/src/Planning_Initial.jsx`, `F2-Tests_Front/src/Planning.test.jsx` et `F2-Tests_Front/vite.config.js`.
+Les fichiers concernés sont principalement `src/Planning.jsx`, `src/Planning_Initial.jsx`, `src/Planning.test.jsx` et `vite.config.js`.
 
 Chaque proposition a été adaptée au sujet fourni et vérifiée par l'exécution locale de la suite Vitest.

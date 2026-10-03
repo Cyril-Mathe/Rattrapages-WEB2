@@ -2,7 +2,7 @@
 
 ## Version testée
 
-`F2-Tests_Front/src/Planning_Initial.jsx`
+`src/Planning_Initial.jsx`
 
 Commande reproductible depuis `F2-Tests_Front` :
 

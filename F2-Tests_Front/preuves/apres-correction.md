@@ -2,7 +2,7 @@
 
 ## Commande exécutée
 
-Depuis `F2-Tests_Front` :
+Depuis le dossier du module (`F2-Tests_Front`) :
 
 ```powershell
 npm test
